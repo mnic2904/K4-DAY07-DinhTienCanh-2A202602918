@@ -1,0 +1,226 @@
+================================================================================
+KẾT QUẢ BENCHMARK RETRIEVAL — CÁ NHÂN: ĐINH TIẾN CẢNH
+Chiến lược: MarkdownHeadingChunker (Section/Heading-based with Context Injection)
+================================================================================
+1. Tổng số tài liệu nạp: 5 file
+2. Tổng số chunks sinh ra: 569 chunks
+3. Đã lưu 569 chunks vào Vector Store.
+--------------------------------------------------------------------------------
+
+### PHẦN 1: CHẠY 5 BENCHMARK QUERIES CHÍNH THỨC
+
+[CÂU HỎI #1] Sinh viên chương trình đại học không bị cảnh báo học tập được đăng ký tối đa và tối thiểu bao nhiêu tín chỉ trong một học kỳ chính?
+  Top-3 Chunks truy xuất được:
+    1. score=0.4100 | doc_id=hust-quy-che-dao-tao-2025 | id=hust-quy-che-dao-tao-2025#54 [V ĐÚNG FACT]
+       Nội dung chi tiết chunk:
+"""
+[Điều 10. Đăng ký học tập chương trình đại học]
+2. Số lượng TC đăng ký:
+
+a) Sinh viên không thuộc diện cảnh báo học tập theo quy định tại khoản 1 Điều 19 của Quy chế này được đăng ký tối đa 24 TC và tối thiểu 12 TC trong học kỳ chính, không áp dụng ngưỡng TC đăng ký tối thiểu với sinh viên trình độ năm cuối. Sinh viên được đăng ký tối đa 8 TC trong học kỳ hè.
+
+b) Sinh viên đang bị cảnh báo học tập bị giới hạn khối lượng đăng ký học tập theo quy định tại khoản 2 Điều 19 của Quy chế này.
+"""
+
+    2. score=0.3630 | doc_id=hust-quy-che-dao-tao-2025 | id=hust-quy-che-dao-tao-2025#105 [~ ĐÚNG DOC]
+       Nội dung chi tiết chunk:
+"""
+[Điều 19. Cảnh báo học tập và buộc thôi học]
+- 2. Hạn chế khối lượng học tập là hình thức buộc những sinh viên đang bị cảnh báo học tập từ mức 2 trở lên đăng ký số TC học phần ít hơn bình thường tại học kỳ 1 của năm học, cụ thể như sau:
+- a) Sinh viên thuộc các CTĐT chuẩn được đăng ký tối đa 14 TC và tối thiểu 8 TC cho một học kỳ chính;
+- b) Sinh viên thuộc các chương trình ELITECH và các CTĐT hợp tác quốc tế được đăng ký tối đa 18 TC và tối thiểu 8 TC cho một học kỳ chính.
+"""
+
+    3. score=0.3489 | doc_id=hust-quy-che-dao-tao-2025 | id=hust-quy-che-dao-tao-2025#26 [~ ĐÚNG DOC]
+       Nội dung chi tiết chunk:
+"""
+[Điều 2. Ngành đào tạo, chương trình đào tạo]
+3. CTĐT tích hợp là chương trình được thiết kế tổng thể theo hướng tích hợp kiến thức, kỹ năng của hai bậc trình độ, đảm bảo học tập liên tục giữa các bậc đào tạo nhằm tối
+"""
+
+  => Điểm câu #1: 2/2 (Tài liệu chuẩn: hust-quy-che-dao-tao-2025)
+
+[CÂU HỎI #2] Khi nào sinh viên bị nâng một mức cảnh báo học tập và khi nào bị áp dụng cảnh báo học tập mức 3?
+  Top-3 Chunks truy xuất được:
+    1. score=0.3630 | doc_id=hust-quy-che-dao-tao-2025 | id=hust-quy-che-dao-tao-2025#105 [V ĐÚNG FACT]
+       Nội dung chi tiết chunk:
+"""
+[Điều 19. Cảnh báo học tập và buộc thôi học]
+1. Cảnh báo học tập được thực hiện theo từng học kỳ chính nhằm giúp sinh viên có kết quả học tập kém biết và có phương án học tập thích hợp để có thể tốt nghiệp trong thời hạn tối đa được phép theo học chương trình.
+- a) Cảnh báo học tập gồm 3 mức: mức 1, mức 2 và mức 3.
+- b) Sinh viên bị nâng một mức cảnh báo học tập nếu số TC không đạt trong học kỳ lớn hơn 8 TC.
+- c) Áp dụng cảnh báo học tập mức 3 nếu số TC nợ đọng từ đầu khóa lớn hơn 24 TC.
+"""
+
+    2. score=0.3489 | doc_id=hust-quy-che-dao-tao-2025 | id=hust-quy-che-dao-tao-2025#112 [~ ĐÚNG DOC]
+       Nội dung chi tiết chunk:
+"""
+[Điều 23. Đăng ký tốt nghiệp kỹ sư]
+### **Điều 23. Đăng ký tốt nghiệp kỹ sư**
+1. ĐHBK Hà Nội xét tốt nghiệp 3 đợt trong năm, cụ thể là cuối mỗi học kỳ chính và cuối học kỳ hè.
+"""
+
+    3. score=0.3340 | doc_id=hust-quy-che-dao-tao-2025 | id=hust-quy-che-dao-tao-2025#54 [~ ĐÚNG DOC]
+       Nội dung chi tiết chunk:
+"""
+[Điều 10. Đăng ký học tập chương trình đại học]
+b) Sinh viên đang bị cảnh báo học tập bị giới hạn khối lượng đăng ký học tập theo quy định tại khoản 2 Điều 19 của Quy chế này.
+"""
+
+  => Điểm câu #2: 2/2 (Tài liệu chuẩn: hust-quy-che-dao-tao-2025)
+
+[CÂU HỎI #3] Mức học phí các học phần học trong học kỳ hè và mức học phí đối với sinh viên nước ngoài tự chi trả được tính bằng bao nhiêu lần mức học phí thông thường?
+  -> Áp dụng Metadata Filter: {'department': 'finance'}
+  Top-3 Chunks truy xuất được:
+    1. score=0.2085 | doc_id=hust-hoc-phi-2025-2026 | id=hust-hoc-phi-2025-2026#22 [V ĐÚNG FACT]
+       Nội dung chi tiết chunk:
+"""
+[5) Các mức học phí khác]
+- Mức học phí các học phần học trong học kỳ hè được tính bằng 1,5 lần mức học phí quy định tương ứng của chương trình.
+- Mức học phí đối với sinh viên nước ngoài tự chi trả kinh phí học tập được tính bằng 1,5 lần mức học phí của chương trình đào tạo tương ứng.
+"""
+
+    2. score=0.1802 | doc_id=hust-hoc-phi-2025-2026 | id=hust-hoc-phi-2025-2026#9 [~ ĐÚNG DOC]
+       Nội dung chi tiết chunk:
+"""
+**Điều 2.** Quyết định này có hiệu lực kể từ ngày ký. Các Ông/Bà Trưởng Ban Đào tạo, Tài chính-Kế hoạch, Công tác sinh viên, Hiệu trưởng các trường, Trưởng các Khoa, sinh viên đại học hệ chính quy...
+"""
+
+    3. score=0.1760 | doc_id=hust-hoc-phi-2025-2026 | id=hust-hoc-phi-2025-2026#17 [~ ĐÚNG DOC]
+       Nội dung chi tiết chunk:
+"""
+[2) Các chương trình đào tạo đặc biệt và chương trình ELITECH]
+| Các chương trình Đào tạo tài năng | 650 |
+"""
+
+  => Điểm câu #3: 2/2 (Tài liệu chuẩn: hust-hoc-phi-2025-2026)
+
+[CÂU HỎI #4] Chứng chỉ tiếng Anh nộp để xét chuẩn ngoại ngữ đầu ra có bắt buộc phải đánh giá đủ 4 kỹ năng không?
+  -> Áp dụng Metadata Filter: {'audience': 'student', 'category': 'language-requirements'}
+  Top-3 Chunks truy xuất được:
+    1. score=0.3695 | doc_id=hust-quy-dinh-ngoai-ngu-k71 | id=hust-quy-dinh-ngoai-ngu-k71#18 [V ĐÚNG FACT]
+       Nội dung chi tiết chunk:
+"""
+[Điều 5. Chuẩn ngoại ngữ đầu ra]
+### **Điều 5. Chuẩn ngoại ngữ đầu ra**
+2. Chứng chỉ tiếng Anh quốc tế hoặc chứng chỉ VSTEP được công nhận phải đánh giá đầy đủ 4 kỹ năng: nghe, nói, đọc, viết; được cấp bởi các đơn vị khảo thí hợp pháp và còn thời hạn hiệu lực 02 năm tính đến ngày nộp hồ sơ xét tốt nghiệp.
+"""
+
+    2. score=0.3424 | doc_id=hust-quy-dinh-ngoai-ngu-k70 | id=hust-quy-dinh-ngoai-ngu-k70#67 [~ ĐÚNG DOC]
+       Nội dung chi tiết chunk:
+"""
+[Bảng 3.1 Danh mục các học phần tiếng Anh thuộc khối ngoại ngữ cơ bản và điều kiện miễn học]
+## **Bảng 3.1 Danh mục các học phần tiếng Anh thuộc khối ngoại ngữ cơ bản và điều kiện miễn học**
+"""
+
+    3. score=0.2959 | doc_id=hust-quy-dinh-ngoai-ngu-k71 | id=hust-quy-dinh-ngoai-ngu-k71#150 [~ ĐÚNG DOC]
+       Nội dung chi tiết chunk:
+"""
+# **2. Chuẩn ngoại ngữ đầu ra yêu cầu với CTĐT Tiếng Anh chuyên nghiệp quốc tế**
+a. Ngoại ngữ 1 là Tiếng Anh: có chứng chỉ đạt trình độ tối thiểu bậc 5 theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam.
+"""
+
+  => Điểm câu #4: 2/2 (Tài liệu chuẩn: hust-quy-dinh-ngoai-ngu-k71)
+
+[CÂU HỎI #5] Văn bản bản dịch tiếng Anh của Quy chế đào tạo năm 2025 được ban hành nhằm mục đích gì và có giá trị pháp lý thay thế văn bản gốc tiếng Việt không?
+  Top-3 Chunks truy xuất được:
+    1. score=0.3154 | doc_id=hust-quy-che-dao-tao-2025 | id=hust-quy-che-dao-tao-2025#84 [X SAI]
+       Nội dung chi tiết chunk:
+"""
+[Điều 14. Đăng ký tốt nghiệp đại học]
+3. Sinh viên có đủ các điều kiện sau đây thì được xét công nhận tốt nghiệp:
+a) Đã hoàn thành đầy đủ các học phần theo yêu cầu của CTĐT trong thời gian quy định...
+b) Đạt chuẩn ngoại ngữ đầu ra.
+"""
+
+    2. score=0.3062 | doc_id=hust-quy-che-dao-tao-2025 | id=hust-quy-che-dao-tao-2025#112 [X SAI]
+       Nội dung chi tiết chunk:
+"""
+[Điều 23. Đăng ký tốt nghiệp kỹ sư]
+### **Điều 23. Đăng ký tốt nghiệp kỹ sư**
+1. ĐHBK Hà Nội xét tốt nghiệp 3 đợt trong năm, cụ thể là cuối mỗi học kỳ chính và cuối học kỳ hè.
+"""
+
+    3. score=0.2856 | doc_id=hust-quy-dinh-ngoai-ngu-k71 | id=hust-quy-dinh-ngoai-ngu-k71#97 [X SAI]
+       Nội dung chi tiết chunk:
+"""
+[Bảng 5.2 Yêu cầu trình độ tiếng Pháp theo học kỳ và chuẩn ngoại ngữ đầu ra khi xét tốt nghiệp]
+| đương theo Bảng 5.3) hoặc Chứng chỉ tiếng Anh đạt trình độ tối thiểu từ Bậc 4 |
+"""
+
+  => Điểm câu #5: 0/2 (Tài liệu chuẩn: hust-ban-dich-tieng-anh-quy-che-dao-tao-2025)
+
+================================================================================
+TỔNG ĐIỂM RETRIEVAL CÁ NHÂN: 8/10 ĐIỂM
+================================================================================
+
+### PHẦN 2: A/B TESTING BẮT BUỘC CHO METADATA FILTER
+
+--- A/B Test Câu #3: 'Mức học phí các học phần học trong học kỳ hè và mức học phí đối với sinh viên nước ngoài tự chi trả được tính bằng bao nhiêu lần mức học phí thông thường?' ---
+1) Khi CÓ Filter {'department': 'finance'}:
+   Top-1: doc=hust-hoc-phi-2025-2026 (score=0.2085)
+   Nội dung: [5) Các mức học phí khác]
+- Mức học phí các học phần học trong học kỳ hè được tính bằng 1,5 lần mức học phí quy định tương ứng của chương trình.
+- Mức học phí đối với sinh viên nước ngoài tự chi trả kinh phí học tập được tính bằng 1,5 lần mức học phí của chương trình đào tạo tương ứng.
+
+   Top-2: doc=hust-hoc-phi-2025-2026 (score=0.1802)
+   Nội dung: **Điều 2.** Quyết định này có hiệu lực kể từ ngày ký. Các Ông/Bà Trưởng Ban Đào tạo, Tài chính-Kế hoạch, Công tác sinh viên...
+
+   Top-3: doc=hust-hoc-phi-2025-2026 (score=0.1760)
+   Nội dung: [2) Các chương trình đào tạo đặc biệt và chương trình ELITECH]
+| Các chương trình Đào tạo tài năng | 650 |
+
+2) Khi KHÔNG CÓ Filter (Unfiltered):
+   Top-1: doc=hust-quy-dinh-ngoai-ngu-k70 (score=0.3331)
+   Nội dung: [GIÁM ĐỐC ĐẠI HỌC BÁCH KHOA HÀ NỘI]
+## **GIÁM ĐỐC ĐẠI HỌC BÁCH KHOA HÀ NỘI**
+*Căn cứ Luật Giáo dục đại học ngày 18 tháng 6 năm 2012...*
+
+   Top-2: doc=hust-quy-che-dao-tao-2025 (score=0.3150)
+   Nội dung: [Điều 29. Đăng ký đề tài luận văn thạc sĩ]
+3. Ngay sau khi nhận quyết định giao đề tài, học viên phải xây dựng kế hoạch thực hiện luận văn...
+
+   Top-3: doc=hust-quy-dinh-ngoai-ngu-k70 (score=0.3147)
+   Nội dung: ## **Bảng 6.2 Bảng quy đổi tương đương các chứng chỉ tiếng Đức**
+
+  Nhận xét A/B:
+  -> KẾT QUẢ: Metadata Filter tạo ra sự khác biệt rõ rệt, loại bỏ hoàn toàn tài liệu nhiễu ngoài phân vùng.
+--------------------------------------------------------------------------------
+--- A/B Test Câu #4: 'Chứng chỉ tiếng Anh nộp để xét chuẩn ngoại ngữ đầu ra có bắt buộc phải đánh giá đủ 4 kỹ năng không?' ---
+1) Khi CÓ Filter {'audience': 'student', 'category': 'language-requirements'}:
+   Top-1: doc=hust-quy-dinh-ngoai-ngu-k71 (score=0.3695)
+   Nội dung: [Điều 5. Chuẩn ngoại ngữ đầu ra]
+### **Điều 5. Chuẩn ngoại ngữ đầu ra**
+2. Chứng chỉ tiếng Anh quốc tế hoặc chứng chỉ VSTEP được công nhận phải đánh giá đầy đủ 4 kỹ năng: nghe, nói, đọc, viết...
+
+   Top-2: doc=hust-quy-dinh-ngoai-ngu-k70 (score=0.3424)
+   Nội dung: [Bảng 3.1 Danh mục các học phần tiếng Anh thuộc khối ngoại ngữ cơ bản và điều kiện miễn học]
+
+   Top-3: doc=hust-quy-dinh-ngoai-ngu-k71 (score=0.2959)
+   Nội dung: # **2. Chuẩn ngoại ngữ đầu ra yêu cầu với CTĐT Tiếng Anh chuyên nghiệp quốc tế**
+
+2) Khi KHÔNG CÓ Filter (Unfiltered):
+   Top-1: doc=hust-quy-dinh-ngoai-ngu-k70 (score=0.3424)
+   Nội dung: [Bảng 3.1 Danh mục các học phần tiếng Anh thuộc khối ngoại ngữ cơ bản và điều kiện miễn học]
+
+   Top-2: doc=hust-quy-che-dao-tao-2025 (score=0.3386)
+   Nội dung: [Điều 45. Những thay đổi trong quá trình đào tạo]
+a) Hết thời gian theo quy định, NCS không hoàn thành CTĐT hoặc luận án...
+
+   Top-3: doc=hust-quy-dinh-ngoai-ngu-k71 (score=0.2959)
+   Nội dung: # **2. Chuẩn ngoại ngữ đầu ra yêu cầu với CTĐT Tiếng Anh chuyên nghiệp quốc tế**
+
+  Nhận xét A/B:
+  -> KẾT QUẢ: Metadata Filter giúp giới hạn phạm vi tìm kiếm chính xác theo chuyên mục.
+--------------------------------------------------------------------------------
+
+### PHẦN 3: PHÂN TÍCH LỖI (FAILURE CASE ANALYSIS)
+
+1. Câu hỏi gặp thất bại: Câu #5 (Bản dịch tiếng Anh của QCDT 2025 có giá trị pháp lý thay thế không?)
+   - Kết quả: Không có chunk của `hust-ban-dich-tieng-anh-quy-che-dao-tao-2025` trong Top-3.
+   - Nguyên nhân:
+     + Do văn bản thông báo bản dịch tiếng Anh rất ngắn (~2,300 ký tự) so với quy chế chính (~78,000 ký tự).
+     + Dùng MockEmbedder (băm MD5 ký tự ngẫu nhiên) nên điểm tương đồng bị chi phối bởi độ dài và tần suất từ ngẫu nhiên.
+   - Đề xuất khắc phục:
+     + Sử dụng Dense Semantic Embeddings (SentenceTransformers hoặc Gemini/OpenAI).
+     + Áp dụng Hybrid Search (kết hợp BM25 Keyword Search với Vector Search) để bắt chính xác từ khóa 'bản dịch tiếng Anh'.
